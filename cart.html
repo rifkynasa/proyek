@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keranjang Belanja | Niche E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Keranjang Belanja</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="cart.html">Keranjang (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cart-items">
+            <!-- Item keranjang akan ditampilkan di sini -->
+        </section>
+        
+        <!-- Menambahkan div untuk menampilkan total harga -->
+        <div class="cart-total">
+            Total Harga: <span id="total-price">Rp0</span>
+        </div>
+
+        <!-- Tombol checkout -->
+        <button class="checkout-button" onclick="checkout()">Checkout</button>
+    </main>
+
+ <script src="cart.js"></script>
+    <script>
+        // Panggil fungsi untuk menampilkan item keranjang saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', () => {
+            displayCartItems();
+            calculateTotalPrice();
+        });
+    </script>
+</body>
+</html>

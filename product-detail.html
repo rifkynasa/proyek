@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - Niche E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Detail Produk</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kontak</a></li>
+                <li><a href="cart.html">Keranjang (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-detail">
+            <img src="img/produk1.jpeg" alt="Produk 1">
+            <div class="product-info">
+                <h2>Produk Ramah Lingkungan 1</h2>
+                <p>Harga: Rp100.000</p>
+                <p>Deskripsi: Produk ini terbuat dari bahan daur ulang berkualitas tinggi yang ramah lingkungan dan tahan lama. Cocok untuk digunakan sehari-hari dan membantu mengurangi limbah plastik.</p>
+                <button>Pesan Sekarang</button>
+                <button onclick="addToCart('Produk Ramah Lingkungan 1', 100000)">Tambahkan ke Keranjang </button>
+
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="product-detail">
+            <img src="img/produk2.jpeg" alt="Produk 2">
+            <div class="product-info">
+                <h2>Produk Ramah Lingkungan 2</h2>
+                <p>Harga: Rp200.000</p>
+                <p>Deskripsi: Produk ini terbuat dari bahan daur ulang berkualitas tinggi yang ramah lingkungan dan tahan lama. Cocok untuk digunakan sehari-hari dan membantu mengurangi limbah plastik.</p>
+                <button onclick="addToCart('Produk Ramah Lingkungan 2', 100000)">Tambahkan ke Keranjang</button>
+
+                <button>Pesan Sekarang</button>
+            </div>
+        </section>
+    </main>
+
+    <main>
+        <section class="product-detail">
+            <img src="img/produk3.jpeg" alt="Produk 3">
+            <div class="product-info">
+                <h2>Produk Ramah Lingkungan 3</h2>
+                <p>Harga: Rp300.000</p>
+                <p>Deskripsi: Produk ini terbuat dari bahan daur ulang berkualitas tinggi yang ramah lingkungan dan tahan lama. Cocok untuk digunakan sehari-hari dan membantu mengurangi limbah plastik.</p>
+                <button onclick="addToCart('Produk Ramah Lingkungan 3', 100000)">Tambahkan ke Keranjang</button>
+
+                <button>Pesan Sekarang</button>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2024 Niche E-Commerce. All rights reserved.</p>
+    </footer>
+</body>
+</html>
